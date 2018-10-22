@@ -8,7 +8,7 @@ export class MyModel {
         }
         return MyModel.instance;
     }
-    public sayHi(): void {
-        console.log("Model say hi");
+    public sayHi(name: string): void {
+        console.log("Model say hi " + name);
     }
 }
