@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": "src",
+    "outDir": "dist",
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "declaration": false
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests"
+  ],
+  "files": [
+    "src/**/*.ts"
+  ],
+  "types": [
+    //(various types, e.g. jquery, core-js),
+    "chrome"
+  ]
+}

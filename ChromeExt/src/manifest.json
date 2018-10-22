@@ -1,0 +1,28 @@
+{
+    "name": "Chrome extension writing using TS",
+    "short_name": "Chrome TS Ext",
+    "version": "1.0.0",
+	"manifest_version": 2,
+	
+    "description": "Some descriptions.",
+	"icons": {
+        "16": "images/if_Cat_halloween_kitty_witch_3809102.png",
+		"48": "images/if_Cat_halloween_kitty_witch_3809102.png",
+		"128": "images/if_Cat_halloween_kitty_witch_3809102.png"
+    },
+	"browser_action": {
+        "default_icon": {
+            "16": "images/if_Cat_halloween_kitty_witch_3809102.png"
+        },
+        "default_popup": "popup/popup.html",
+        "default_title": "POM Builder"
+    },
+	
+    "permissions": ["contextMenus","storage"],
+    "background": {
+        "page": "background/background.html",
+        "persistent": false
+    },
+    "content_security_policy": "script-src 'self' https://www.google-analytics.com; img-src *; object-src 'self'",
+	"devtools_page": "devtools/devtools.html"
+}

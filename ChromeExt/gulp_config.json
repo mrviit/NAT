@@ -1,0 +1,55 @@
+{
+  "dev": {
+    "typescript": {
+      "src": "src/**/*.ts",
+      "outDir": "./dist",
+      "outExt": ".js",
+      "minify": false,
+      "sourceMaps": {
+        "use": true,
+        "external": true,
+        "externalRelDir": "./mapjs/",
+        "externalURLPrefix": "../../",
+        "sourceRoot": "../../"
+      }
+    },
+    "assets": [
+      {
+        "src": "src/**/*.html",
+        "outDir": "dist"
+      },
+      {
+        "src": "src/**/*.css",
+        "outDir": "dist"
+      },
+      {
+        "src": "src/**/*.png",
+        "outDir": "dist"
+      },
+      {
+        "src": "src/**/*.gif",
+        "outDir": "dist"
+      },
+      {
+        "src": "src/**/*.json",
+        "outDir": "dist"
+      }
+    ],
+    "clean": ["rm -r dist/*"]
+  },
+  "prod": {
+    "typescript": {
+      "src": "src/**/*.ts",
+      "outDir": "./dist",
+      "outExt": ".js",
+      "minify": true
+    },
+    "assets": [
+      {
+        "src": "src/**/*.html",
+        "outDir": "dist"
+      }
+    ],
+    "clean": []
+  }
+}
